@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("./images/newyork.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 500px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.19);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  display: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.openButton {
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  box-shadow: 0 0 5px white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.closeButton {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.openButton:hover {
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white;
+}
+.closeButton:hover {
+  box-shadow: 0 0 3px red;
+}
